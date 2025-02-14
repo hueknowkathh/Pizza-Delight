@@ -1,0 +1,228 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5b4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Navigation Styling */
+nav {
+    width: 100%;
+    height: auto;
+    background: #501d1d;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Home Section */
+#home h2 {
+    color: #d32f2f;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.pizza-image, .hawaian {
+    width: 45%;
+    max-width: 260px;
+    border-radius: 10px;
+}
+
+.food-delivery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.delivery-logo {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.delivery-logo:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.house {
+    width: 45%;
+    max-width: 260px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #d32f2f;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        font-size: 28px;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .pizza-image, .hawaian {
+        width: 80%; /* Adjust image size on smaller screens */
+        max-width: 100%;
+    }
+
+    .food-delivery {
+        margin-top: 15px;
+    }
+
+    .house {
+        width: 80%; /* Adjust size of house image on mobile */
+        max-width: 100%;
+    }
+
+    form {
+        width: 90%; /* Make the form take most of the screen width on mobile */
+    }
+
+    button {
+        padding: 15px;
+    }
+
+    .delivery-logo {
+        width: 80px; /* Adjust size of delivery logos */
+    }
+}
+
+/* Small Mobile Device Responsiveness */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .pizza-image, .hawaian {
+        width: 90%; /* Make images bigger on small mobile screens */
+    }
+
+    .food-delivery {
+        margin-top: 10px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    .delivery-logo {
+        width: 60px; /* Smaller logo on very small screens */
+    }
+}
